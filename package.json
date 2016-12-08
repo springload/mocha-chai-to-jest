@@ -1,0 +1,33 @@
+{
+  "name": "mocha-chai-to-jest",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springload/mocha-chai-to-jest"
+  },
+  "engines": {
+    "node": "^6.9.0",
+    "npm": "^3.10.8"
+  },
+  "dependencies": {
+    "json-beautify": "^1.0.0",
+    "node-xlsx": "^0.7.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "test:mocha": "mocha mocha-chai --compilers js:babel-core/register",
+    "test:jest": "jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.6.0",
+    "jest": "^17.0.3",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.4.1"
+  }
+}
