@@ -21,11 +21,11 @@ export default class Component extends React.Component {
             <div className="section">
                 {clicked ? (
                     <p>
-                        Holy click!
+                        Woof!
                     </p>
                 ) : (
                     <button onClick={this.clickEvent}>
-                        Please click me!
+                        Pat me!
                     </button>
                 )}
             </div>

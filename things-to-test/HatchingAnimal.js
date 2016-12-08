@@ -1,31 +1,31 @@
 import React from 'react';
-import StatelessComponent from './StatelessComponent';
+import StatelessAnimal from './StatelessAnimal';
 
-export default class ReactCycleComponent extends React.Component {
+export default class HatchingAnimal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mounted: false,
+            hatched: false,
         }
     }
 
     componentDidMount() {
         this.setState({
-            mounted: true,
+            hatched: true,
         });
     }
 
     render() {
-        const { mounted } = this.state;
+        const { hatched } = this.state;
         return (
             <div className="section">
-                {mounted ? (
+                {hatched ? (
                     <p>
-                        This text will be displayed once I'm mounted.
+                        Hello World!
                     </p>
                 ) : (
                     <p>
-                        Please mount me!
+                        Still in my egg!
                     </p>
                 )}
             </div>

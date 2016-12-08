@@ -1,28 +1,28 @@
-import { sum } from '../things-to-test/utils';
+import { animalCompatibility } from '../things-to-test/utils';
 import assert from 'assert';
 
-describe('Sum', function() {
-  describe('3 + 2', function() {
-    it('should return 5', function() {
-      assert.equal(5, sum(3, 2));
+describe('animalCompatibility', function() {
+  describe('dogs & cats', function() {
+    it('should return incompatible', function() {
+      assert.equal('incompatible', animalCompatibility('dogs', 'cats'));
     });
   });
 
-  describe('3 + -7', function() {
-    it('should return -4', function() {
-      assert.equal(-4, sum(3, -7));
+  describe('dogs & dogs', function() {
+    it('should return compatible', function() {
+      assert.equal('compatible', animalCompatibility('dogs', 'dogs'));
     });
   });
 
-  describe('3 + undefined', function() {
-    it('should return -1', function() {
-      assert.equal(-1, sum(3));
+  describe('dogs & undefined', function() {
+    it('should return incompatible', function() {
+      assert.equal('incompatible', animalCompatibility('dogs', undefined));
     });
   });
 
-  describe('undefined + 2', function() {
-    it('should return -1', function() {
-      assert.equal(-1, sum(undefined, 2));
+  describe('undefined & cats', function() {
+    it('should return incompatible', function() {
+      assert.equal('incompatible', animalCompatibility(undefined, 'cats'));
     });
   });
 });
