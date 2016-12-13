@@ -18,7 +18,8 @@
   },
   "scripts": {
     "test:mocha": "mocha mocha-chai --compilers js:babel-core/register",
-    "test:jest": "jest"
+    "test:jest": "jest",
+    "test:jest:coverage": "jest --coverage"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -29,5 +30,27 @@
     "jest": "^17.0.3",
     "mocha": "^3.2.0",
     "react-addons-test-utils": "^15.4.1"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(es6|js|json)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/mocha-chai/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "globals": {
+      "dataLayer": []
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/mocha-chai/"
+    ]
   }
 }

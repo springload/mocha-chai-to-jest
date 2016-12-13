@@ -1,0 +1,8 @@
+exports[`StatelessAnimal component renders correctly with min params 1`] = `
+<div
+  className="animal">
+  <p>
+    Meow!
+  </p>
+</div>
+`;

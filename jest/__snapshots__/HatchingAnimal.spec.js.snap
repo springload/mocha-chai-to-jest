@@ -1,0 +1,8 @@
+exports[`HatchingAnimal component renders correctly with min params 1`] = `
+<div
+  className="section">
+  <p>
+    Still in my egg!
+  </p>
+</div>
+`;
