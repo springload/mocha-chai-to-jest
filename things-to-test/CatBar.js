@@ -1,5 +1,6 @@
 import React from 'react';
 import StatelessAnimal from './StatelessAnimal';
+import HatchingAnimal from './HatchingAnimal';
 
 const CatBar = () => (
     <div className="catbar">
@@ -9,7 +10,10 @@ const CatBar = () => (
         <StatelessAnimal sound="Meow!" />
         <StatelessAnimal sound="Meoooow!" />
         <StatelessAnimal sound="Meeeeeeeeow!" />
+        <HatchingAnimal />
     </div>
 );
+
+CatBar.displayName = 'CatBar';
 
 export default CatBar;

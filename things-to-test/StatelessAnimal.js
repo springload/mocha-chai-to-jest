@@ -13,5 +13,6 @@ const StatelessAnimal = ({ sound }) => (
 );
 
 StatelessAnimal.propTypes = propTypes;
+StatelessAnimal.displayName = 'StatelessAnimal';
 
 export default StatelessAnimal;

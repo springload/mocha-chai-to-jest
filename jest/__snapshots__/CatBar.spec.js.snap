@@ -10,5 +10,6 @@ exports[`CatBar component renders correctly with min params 1`] = `
     sound="Meoooow!" />
   <StatelessAnimal
     sound="Meeeeeeeeow!" />
+  <HatchingAnimal />
 </div>
 `;
