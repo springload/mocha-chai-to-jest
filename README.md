@@ -4,8 +4,11 @@ How to migrate unit tests from mocha+chai to Jest.
 
 ## Getting started
 
+You need [`nvm`](https://github.com/creationix/nvm) installed on your machine.
+
 Setup the project:
 ```
+nvm install
 nvm use
 npm install
 ```
