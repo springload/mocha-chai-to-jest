@@ -32,6 +32,12 @@
     "react-addons-test-utils": "^15.4.1",
     "sinon": "^1.17.7"
   },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "jest": {
     "transform": {
       ".*": "<rootDir>/node_modules/babel-jest"
