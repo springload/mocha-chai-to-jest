@@ -1,31 +1,14 @@
-# mocha-chai-to-jest
+# Migrating unit tests from Mocha and Chai to [Jest](https://facebook.github.io/jest/)
 
-How to migrate unit tests from mocha+chai to Jest.
+> A how-to, with code samples, to leverage Jest in your React unit tests.
 
-## Getting started
-
-You need [`nvm`](https://github.com/creationix/nvm) installed on your machine.
-
-Setup the project:
-```
-nvm install
-nvm use
+```sh
+# Setup the project
 npm install
-```
-
-### Run Mocha+chai tests
-
-```
+# Run Mocha+chai tests
 npm run test:mocha
-```
-
-### Run Jest tests
-
-```
+# Run Jest tests
 npm run test:jest
-```
-
-Bonus point if you want to see the code coverage with jest
-```
+# Bonus point: test coverage with Jest
 npm run test:jest:coverage
 ```
