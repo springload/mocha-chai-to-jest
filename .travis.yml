@@ -11,3 +11,5 @@ script:
 - npm run test:jest:coverage
 after_success:
 - npm run coveralls
+notifications:
+  email: false
