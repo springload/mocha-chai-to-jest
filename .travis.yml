@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+node_js:
+- 6
+- node
+script:
+- npm run test:mocha
+- npm run test:jest
+- npm run test:jest:coverage
+after_success:
+- npm run coveralls
