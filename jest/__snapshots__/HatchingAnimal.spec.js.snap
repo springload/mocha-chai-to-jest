@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`HatchingAnimal component renders correctly with min params 1`] = `
 <div
-  className="section">
+  className="section"
+>
   <p>
     Still in my egg!
   </p>

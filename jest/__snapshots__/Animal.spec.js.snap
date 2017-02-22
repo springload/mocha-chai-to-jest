@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Animal component click event works 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
@@ -7,17 +9,21 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="section">
+    className="section"
+>
     <button
-        onClick={[Function]}>
+        onClick={[Function]}
+    >
         Pat me!
     </button>
 </div>,
   "nodes": Array [
     <div
-      className="section">
+      className="section"
+>
       <button
-            onClick={[Function]}>
+            onClick={[Function]}
+      >
             Pat me!
       </button>
 </div>,
@@ -60,17 +66,21 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="section">
+          className="section"
+>
           <button
-                    onClick={[Function]}>
+                    onClick={[Function]}
+          >
                     Pat me!
           </button>
 </div>,
         "_debugID": 4,
         "_renderedOutput": <div
-          className="section">
+          className="section"
+>
           <button
-                    onClick={[Function]}>
+                    onClick={[Function]}
+          >
                     Pat me!
           </button>
 </div>,
@@ -98,14 +108,16 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="section">
+    className="section"
+>
     <p>
         Woof!
     </p>
 </div>,
   "nodes": Array [
     <div
-      className="section">
+      className="section"
+>
       <p>
             Woof!
       </p>
@@ -149,14 +161,16 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="section">
+          className="section"
+>
           <p>
                     Woof!
           </p>
 </div>,
         "_debugID": 4,
         "_renderedOutput": <div
-          className="section">
+          className="section"
+>
           <p>
                     Woof!
           </p>
@@ -185,17 +199,21 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="section">
+    className="section"
+>
     <button
-        onClick={[Function]}>
+        onClick={[Function]}
+    >
         Pat me!
     </button>
 </div>,
   "nodes": Array [
     <div
-      className="section">
+      className="section"
+>
       <button
-            onClick={[Function]}>
+            onClick={[Function]}
+      >
             Pat me!
       </button>
 </div>,
@@ -238,17 +256,21 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="section">
+          className="section"
+>
           <button
-                    onClick={[Function]}>
+                    onClick={[Function]}
+          >
                     Pat me!
           </button>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
-          className="section">
+          className="section"
+>
           <button
-                    onClick={[Function]}>
+                    onClick={[Function]}
+          >
                     Pat me!
           </button>
 </div>,

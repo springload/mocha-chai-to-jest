@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`StatelessAnimal component renders correctly with min params 1`] = `
 <div
-  className="animal">
+  className="animal"
+>
   <p>
     Meow!
   </p>
