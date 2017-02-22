@@ -1,76 +1,75 @@
 import { animalCompatibility, areIdenticalAnimals, getSpecie, debounce } from '../things-to-test/utils';
-import assert from 'assert';
 
-describe('animalCompatibility', function() {
-  describe('dogs & cats', function() {
-    it('should return incompatible', function() {
-      expect(animalCompatibility('dogs', 'cats')).toBe('incompatible');
+describe('animalCompatibility', () => {
+    describe('dogs & cats', () => {
+        it('should return incompatible', () => {
+            expect(animalCompatibility('dogs', 'cats')).toBe('incompatible');
+        });
     });
-  });
 
-  describe('dogs & dogs', function() {
-    it('should return compatible', function() {
-      expect(animalCompatibility('dogs', 'dogs')).toBe('compatible');
+    describe('dogs & dogs', () => {
+        it('should return compatible', () => {
+            expect(animalCompatibility('dogs', 'dogs')).toBe('compatible');
+        });
     });
-  });
 
-  describe('dogs & undefined', function() {
-    it('should return incompatible', function() {
-      expect(animalCompatibility('dogs', undefined)).toBe('incompatible');
+    describe('dogs & undefined', () => {
+        it('should return incompatible', () => {
+            expect(animalCompatibility('dogs', undefined)).toBe('incompatible');
+        });
     });
-  });
 
-  describe('undefined & cats', function() {
-    it('should return incompatible', function() {
-      expect(animalCompatibility(undefined, 'cats')).toBe('incompatible');
+    describe('undefined & cats', () => {
+        it('should return incompatible', () => {
+            expect(animalCompatibility(undefined, 'cats')).toBe('incompatible');
+        });
     });
-  });
 });
 
-describe('areIdenticalAnimals', function() {
-  describe('dogs & cats', function() {
-    it('should return false', function() {
-      expect(areIdenticalAnimals('dogs', 'cats')).toBeFalsy();
+describe('areIdenticalAnimals', () => {
+    describe('dogs & cats', () => {
+        it('should return false', () => {
+            expect(areIdenticalAnimals('dogs', 'cats')).toBeFalsy();
+        });
     });
-  });
 
-  describe('dogs & dogs', function() {
-    it('should return true', function() {
-      expect(areIdenticalAnimals('dogs', 'dogs')).toBeTruthy();
+    describe('dogs & dogs', () => {
+        it('should return true', () => {
+            expect(areIdenticalAnimals('dogs', 'dogs')).toBeTruthy();
+        });
     });
-  });
 
-  describe('dogs & undefined', function() {
-    it('should return false', function() {
-      expect(areIdenticalAnimals('dogs', undefined)).toBeFalsy();
+    describe('dogs & undefined', () => {
+        it('should return false', () => {
+            expect(areIdenticalAnimals('dogs', undefined)).toBeFalsy();
+        });
     });
-  });
 
-  describe('undefined & cats', function() {
-    it('should return false', function() {
-      expect(areIdenticalAnimals(undefined, 'dogs')).toBeFalsy();
+    describe('undefined & cats', () => {
+        it('should return false', () => {
+            expect(areIdenticalAnimals(undefined, 'dogs')).toBeFalsy();
+        });
     });
-  });
 
-  describe('undefined & undefined', function() {
-    it('should return true', function() {
-      expect(areIdenticalAnimals()).toBeTruthy();
+    describe('undefined & undefined', () => {
+        it('should return true', () => {
+            expect(areIdenticalAnimals()).toBeTruthy();
+        });
     });
-  });
 });
 
-describe('getSpecie', function() {
-  describe('undefined specie', function() {
-    it('should return undefined', function() {
-      expect(getSpecie({})).toBeUndefined();
+describe('getSpecie', () => {
+    describe('undefined specie', () => {
+        it('should return undefined', () => {
+            expect(getSpecie({})).toBeUndefined();
+        });
     });
-  });
 
-  describe('bird specie', function() {
-    it('should return bird', function() {
-      expect(getSpecie({ specie: 'bird'})).toBe('bird');
+    describe('bird specie', () => {
+        it('should return bird', () => {
+            expect(getSpecie({ specie: 'bird' })).toBe('bird');
+        });
     });
-  });
 });
 
 jest.useFakeTimers();

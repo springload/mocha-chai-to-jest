@@ -5,7 +5,7 @@ exports[`CatBar component renders correctly with min params 1`] = `
   className="catbar"
 >
   <p>
-    I'm a cat bar. I contain cats.
+    I am a cat bar. I contain cats.
   </p>
   <StatelessAnimal
     sound="Meow!"

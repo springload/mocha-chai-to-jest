@@ -5,11 +5,11 @@ export default class Animal extends React.Component {
         super(props);
         this.state = {
             clicked: false,
-        }
+        };
         this.clickEvent = this.pvtClickEvent.bind(this);
     }
 
-    pvtClickEvent(evt) {
+    pvtClickEvent() {
         this.setState({
             clicked: true,
         });

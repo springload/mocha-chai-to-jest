@@ -1,12 +1,12 @@
 import React from 'react';
-import HatchingAnimal from '../things-to-test/HatchingAnimal';
 import ReactTestUtils from 'react-addons-test-utils';
+import HatchingAnimal from '../things-to-test/HatchingAnimal';
 
 describe('HatchingAnimal component', () => {
     it('renders correctly with min params', () => {
         const shallowRenderer = ReactTestUtils.createRenderer();
         const result = shallowRenderer.render(
-            <HatchingAnimal />
+            <HatchingAnimal />,
         );
         expect(result).toMatchSnapshot();
     });
@@ -14,7 +14,7 @@ describe('HatchingAnimal component', () => {
     it('componentDidMount is working', () => {
         const shallowRenderer = ReactTestUtils.createRenderer();
         shallowRenderer.render(
-            <HatchingAnimal />
+            <HatchingAnimal />,
         );
         const instance = shallowRenderer.getMountedInstance();
         expect(instance.state.hatched).toBeFalsy();

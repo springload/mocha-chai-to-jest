@@ -5,7 +5,7 @@ import HatchingAnimal from './HatchingAnimal';
 const CatBar = () => (
     <div className="catbar">
         <p>
-            I'm a cat bar. I contain cats.
+            I am a cat bar. I contain cats.
         </p>
         <StatelessAnimal sound="Meow!" />
         <StatelessAnimal sound="Meoooow!" />

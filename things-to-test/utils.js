@@ -1,9 +1,9 @@
-export const animalCompatibility = (a, b) => {
-    return a === b ? 'compatible' : 'incompatible';
+export const animalCompatibility = (animalA, animalB) => {
+    return animalA === animalB ? 'compatible' : 'incompatible';
 };
 
-export const areIdenticalAnimals = (a, b) => {
-    return a === b;
+export const areIdenticalAnimals = (animalA, animalB) => {
+    return animalA === animalB;
 };
 
 export const getSpecie = (animal) => {
@@ -11,14 +11,15 @@ export const getSpecie = (animal) => {
 };
 
 export const debounce = (func, wait) => {
-	let timeout;
-	return function() {
-		const context = this, args = arguments;
-		const later = function() {
-			timeout = null;
-			func.apply(context, args);
-		};
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-	};
+    let timeout;
+    return () => {
+        const context = this;
+        const args = arguments;
+        const later = () => {
+            timeout = null;
+            func.apply(context, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
 };
