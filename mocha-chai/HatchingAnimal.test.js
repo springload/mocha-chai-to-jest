@@ -13,8 +13,8 @@ describe('<HatchingAnimal />', () => {
             <HatchingAnimal />,
     );
         const instance = shallowRenderer.getMountedInstance();
-        expect(instance.state.hatched).to.be.false;
+        expect(instance.state.styleHeight).to.equal('1px');
         instance.componentDidMount();
-        expect(instance.state.hatched).to.be.true;
+        expect(instance.state.styleHeight).to.equal('150px');
     });
 });

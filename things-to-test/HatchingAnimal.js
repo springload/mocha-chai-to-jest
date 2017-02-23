@@ -4,32 +4,26 @@ export default class HatchingAnimal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hatched: false,
+            styleHeight: '1px',
         };
     }
 
     componentDidMount() {
-        // N.B. Do not reproduce this in your code.
-        // You should not setState in componentDidMount.
-        // This is done here just for a basic test showcase.
+        // N.B. This is one of the only case where you can do
+        // a setState() inside a componentDidMount
+        // Because it's ok for it to rerender
         this.setState({ // eslint-disable-line react/no-did-mount-set-state
-            hatched: true,
+            styleHeight: '150px',
         });
     }
 
     render() {
-        const { hatched } = this.state;
+        const { styleHeight } = this.state;
         return (
-            <div className="section">
-                {hatched ? (
-                    <p>
-                        Hello World!
-                    </p>
-                ) : (
-                    <p>
-                        Still in my egg!
-                    </p>
-                )}
+            <div className="section" style={{ height: styleHeight }}>
+                <p>
+                    I am growing when I am mounted.
+                </p>
             </div>
         );
     }

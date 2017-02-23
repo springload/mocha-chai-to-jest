@@ -3,9 +3,14 @@
 exports[`HatchingAnimal component renders correctly with min params 1`] = `
 <div
   className="section"
+  style={
+    Object {
+      "height": "1px",
+    }
+  }
 >
   <p>
-    Still in my egg!
+    I am growing when I am mounted.
   </p>
 </div>
 `;
